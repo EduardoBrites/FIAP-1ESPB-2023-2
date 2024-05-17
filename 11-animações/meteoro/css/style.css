@@ -1,0 +1,40 @@
+body{
+    background-color: #0b0d2e;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+}
+#cauda{
+    background-image: linear-gradient(to right, #ffffff00, rgb(255, 136, 0), red); 
+    width: 200px;
+    height: 50px;
+    transform: rotate(45deg);
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    animation-name: meteoro;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+#meteoro{
+    width: 45px;
+    margin-right: 2.5px;
+    height: 45px;
+    background-color: gray;
+    box-shadow: inset -5px -5px 15px black;
+    border-radius: 100px;
+}
+@keyframes meteoro {
+    0%,
+    100%{
+        transform: translate(-30px, -30px) rotate(45deg);
+        background-image: linear-gradient(to right, #ffffff00, rgb(255, 136, 0), red); 
+    }
+    50%{
+        transform: translate(50px, 50px) rotate(45deg);
+        background-image: linear-gradient(to right, #ffffff00, rgb(255, 136, 0), red); 
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação moeda</title>
+
+    <style>
+
+        div{
+            background-image: url("./img/01.png");
+            background-repeat: no-repeat;
+            width: 42px;
+            height: 44px;
+            animation-name: moeda;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes moeda {
+            0%,
+            100%{
+                background-image: url("./img/01.png");
+                margin-top: 0;
+                height: 44px;
+                margin-top: 0px;
+            }
+            25%{
+                background-image: url("./img/02.png");
+                height: 24px;
+                margin-top: 10px;
+            }
+            50%{
+                background-image: url("./img/03.png");
+                margin-top: 0;
+                height: 44px;
+                margin-top: 0px;
+            }
+            75%{
+                background-image: url("./img/04.png");
+                height: 24px;
+                margin-top: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>&nbsp;</div>
+    
+</body>
+</html>
